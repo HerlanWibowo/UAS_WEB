@@ -34,6 +34,32 @@ if(isset($_POST['register'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" type="text/css" href="../style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        /* REGISTER CONTAINER  */
+        .register__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Menetapkan tinggi ke 100% dari tinggi viewport */
+            margin: 70px 0;
+        }
+        .register__content {
+            width: 300px;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(135,123,123,0.61);; /* Menambahkan box shadow */
+            padding : 20px;
+        }
+
+        .register__content-title {
+            color:#333;
+            text-align: center;
+        }
+        .form-group label {
+            font-weight: bold;
+            padding : 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="register__container">
@@ -60,8 +86,9 @@ if(isset($_POST['register'])) {
                         <input class="form-control" type="password" name="password" placeholder="Password">
                     </div>
 
-                    <input type="submit" class="btn btn-success btn-block" name="register" value="Daftar" />
+                    <input type="submit" class="btn btn-primary btn-block" name="register" value="Daftar" />
                 </form>
+                <p class="text-center mt-3"><a href="login.php">Login</a></p>
             </div>
         </div>
     </div>
